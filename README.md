@@ -9,6 +9,7 @@
 
 ## Usage
 ~~~~
+terraform init
 terraform apply
 ~~~~
 
