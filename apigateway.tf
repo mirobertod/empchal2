@@ -138,6 +138,6 @@ resource "aws_lambda_permission" "apigw" {
 }
 
 output "api_endpoint" {
-  value       =  "${aws_api_gateway_deployment.task-api-deploy.invoke_url}"
+  value       =  "${aws_api_gateway_deployment.task-api-deploy.invoke_url}/${aws_api_gateway_resource.proxy.path_part}"
   description = "The public API endopint."
 }
